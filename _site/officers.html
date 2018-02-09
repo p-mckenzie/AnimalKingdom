@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Officers - Animal Kingdom</title>
+	<LINK REL="SHORTCUT ICON" HREF="favicon.ico">
+	
+    <!-- CSS -->
+    <link href="officers.stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="general.stylesheet.css" rel="stylesheet" type="text/css">
+
+<!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    <!-- Header -->
+		<div ID="holder">
+			<ul>
+				<li><a href="./">Home</a></li>
+				<li class="dropdown">
+					<a href="" class="dropbtn">About</a>
+					<div class="dropdown-content">
+						<a href="about.html">About</a>
+						<a href="lbexcellence.html">AnimalExcellence</a>
+					</div>
+				</li>
+				<li><a href="pillars.html">Pillars</a></li>
+				<li class="currentpage dropdown">
+					<a href="" class="dropbtn">Members</a>
+					<div class="dropdown-content">
+						<a href="officers.html" class="active">Officers</a>
+						<a href="members.html">Active Members</a>
+					</div>
+				</li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+		</div>
+	<br><br><br><br>
+	
+    <!-- Slideshow -->
+	<div class="slideshow">
+
+<div class="slides mySlides">
+  <img src="img/slideshow/officers/1.jpeg" style="width:100%">
+</div>
+
+<div class="slides mySlides">
+  <img src="img/slideshow/officers/2.jpeg" style="width:100%">
+</div>
+
+<a class="button" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"> < </a>
+<a class="button" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"> > </a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+		<div ID="titlebox"><div ID="title">OFFICER BOARD</div>
+		<div ID="subtitle">Introducing the beautiful and talented ladies serving on our Fall 2016 officer board!
+		</div></div>
+		
+		<!--Officer block section-->
+		<div class="container">
+			<div class="block">
+				<img src="img/team/puppy.jpeg" ID="photo" />
+				<p ID="text"><strong>Puppy 1</strong>
+				<br>President | Austin, TX
+				<br>International Relations </p>
+				<p ID="alt"><strong>Puppy 1</strong>
+				<br>President</p>
+				<p ID="bio">This puppy enjoys naps and sitting in teacups.</p>
+			</div>
+			<div class="block">
+				<img src="img/team/puppy.jpeg" ID="photo" />
+				<p ID="text"><strong>Puppy 2</strong>
+				<br>Vice President | Austin, TX
+				<br>Environmental Science </p>
+				<p ID="alt"><strong>Puppy 2</strong>
+				<br>Vice President</p>
+				<p ID="bio">This puppy enjoys naps and sitting in teacups.</p>
+			</div>
+			<div class="block">
+				<img src="img/team/puppy.jpeg" ID="photo" />
+				<p ID="text"><strong>Puppy 3</strong>
+				<br>Secretary | Austin, TX
+				<br>International Relations </p>
+				<p ID="alt"><strong>Puppy 3</strong>
+				<br>Secretary</p>
+				<p ID="bio">This puppy enjoys naps and sitting in teacups.</p>
+			</div>
+			<div class="block">
+				<img src="img/team/puppy.jpeg" ID="photo" />
+				<p ID="text"><strong>Puppy 4</strong>
+				<br>Forest Chair | Austin, TX
+				<br>Environmental Science </p>
+				<p ID="alt"><strong>Puppy 4</strong>
+				<br>Forest Chair</p>
+				<p ID="bio">This puppy enjoys naps and sitting in teacups.</p>
+			</div>
+			<div class="block">
+				<img src="img/team/puppy.jpeg" ID="photo" />
+				<p ID="text"><strong>Puppy 5</strong>
+				<br>Desert Chair | Austin, TX
+				<br>International Relations </p>
+				<p ID="alt"><strong>Puppy 5</strong>
+				<br>Desert Chair</p>
+				<p ID="bio">This puppy enjoys naps and sitting in teacups.</p>
+			</div>
+			<div class="block">
+				<img src="img/team/puppy.jpeg" ID="photo" />
+				<p ID="text"><strong>Puppy 6</strong>
+				<br>Savannah Chair | Austin, TX
+				<br>Environmental Science </p>
+				<p ID="alt"><strong>Puppy 6</strong>
+				<br>Savannah Chair</p>
+				<p ID="bio">This puppy enjoys naps and sitting in teacups.</p>
+			</div>
+			<div class="block">
+				<img src="img/team/puppy.jpeg" ID="photo" />
+				<p ID="text"><strong>Puppy 7</strong>
+				<br>Rainforest Chair | Austin, TX
+				<br>International Relations </p>
+				<p ID="alt"><strong>Puppy 7</strong>
+				<br>Rainforest Chair</p>
+				<p ID="bio">This puppy enjoys naps and sitting in teacups.</p>
+			</div>
+		</div>
+		
+	<!--Social media section-->
+	<div ID="socialmedia">
+		<p>We're on social media!</p>
+		<a href=""><img ID="social" src="img/icons/facebook.png" /></a>
+		<a href=""><img ID="social" src="img/icons/instagram.png" /></a>
+		<a href=""><img ID="social" src="img/icons/twitter.png" /></a>
+	</div>
+		
+	<div ID="footer">
+		<img src="img/logo.jpg" ID="logo">
+		<p>©Copyright 2016 - The Animal Kingdom. All rights reserved.</p>
+	</div>
+  </body> 
+</html>

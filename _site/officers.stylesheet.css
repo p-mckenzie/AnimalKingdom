@@ -1,0 +1,83 @@
+/*Officer blocks */
+@import "compass/css3";
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content:center;
+}
+#alt {
+  display:none;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#text {
+	text-align:center;
+	width:100%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.block {
+	background-color:#F9F9F9;
+}
+#bio {
+  font-family: 'Open Sans Condensed', sans-serif;
+  display:none;
+  margin-right:10px;
+  margin-left:10px;
+  font-size:22px;
+}
+@media all and (min-width:880px) {
+  #text {
+	font-size:24px;
+  height:155px;}
+  .block {
+	width:400px;
+	height:460px;
+  margin:10px;}
+  #photo {
+	width:240px;
+	border-radius:50%;
+	margin:10px auto 0 auto;}
+  .block:hover #text {
+    display:none;}
+  .block:hover #bio {
+    display:block;}
+}
+@media all and (max-width:880px) and (min-width:640px) {
+  #text {
+	font-size:20px;
+	height:155px;}
+  .block {
+	width:280px;
+	height:460px;
+  margin:10px;}
+  #photo {
+	width:230px;
+	border-radius:50%;
+	padding:25px;}
+  .block:hover #text {
+    display:none;}
+  .block:hover #bio {
+    display:block;
+    font-size:18px;}
+}
+@media all and (max-width:640px) {
+  #text {
+	display:none;}
+  #alt {
+  display:block;
+  font-size:16px;
+  }
+  .block {
+	width:130px;
+	height:190px;
+  margin:10px;}
+  #photo {
+	width:100px;
+	border-radius:50%;
+	padding-top:10px;}
+}

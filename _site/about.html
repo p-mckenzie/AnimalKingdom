@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About - Animal Kingdom</title>
+	<LINK REL="SHORTCUT ICON" HREF="favicon.ico">
+	
+    <!-- CSS -->
+    <link href="about.stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="general.stylesheet.css" rel="stylesheet" type="text/css">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    <!-- Header -->
+		<div ID="holder">
+			<ul>
+				<li><a href="./">Home</a></li>
+				<li class="currentpage dropdown">
+					<a href="" class="dropbtn">About</a>
+					<div class="dropdown-content">
+						<a href="about.html" class="active">About</a>
+						<a href="lbexcellence.html">AnimalExcellence</a>
+					</div>
+				</li>
+				<li><a href="pillars.html">Pillars</a></li>
+				<li class="dropdown">
+					<a href="" class="dropbtn">Members</a>
+					<div class="dropdown-content">
+						<a href="officers.html">Officers</a>
+						<a href="members.html">Active Members</a>
+					</div>
+				</li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+		</div>
+	<br><br><br><br>
+
+    <!-- Slideshow -->
+	<div class="slideshow">
+
+<div class="slides mySlides">
+  <img src="img/slideshow/about/1.jpeg" style="width:100%">
+</div>
+
+<div class="slides mySlides">
+  <img src="img/slideshow/about/2.jpeg" style="width:100%">
+</div>
+
+<a class="button" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"> < </a>
+<a class="button" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"> > </a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+    <!-- Title -->
+	<div ID="titlebox">
+		<div ID="title">ABOUT</div>
+		<div ID="subtitle">Domain Kingdom Phylum Genus Species<br></div>
+	</div>
+		
+		<!--Ladybird section-->
+		<div class="wrapper">
+  <aside class="aside aside-1"><img ID="excellencepic" src="img/icons/elephant.jpeg" />
+</aside>
+  <aside class="aside aside-2"><div ID="text">
+					<p ID="lead">WHAT IS AN ANIMAL?</p>
+					<p>Animals are divided by body plan into vertebrates and invertebrates. Vertebrates—fishes, amphibians, reptiles, birds, and mammals—have a vertebral column (spine); invertebrates do not. All vertebrates and most invertebrates are bilaterally symmetrical (Bilateria). Invertebrates include arthropods, molluscs, roundworms, ringed worms, flatworms, and other phyla in Ecdysozoa and Spiralia. Echinoderm larvae are initially bilaterally symmetrical, but later as adults develop radial symmetry; Cnidarians are radially symmetrical; ctenophores are biradially symmetrical; and sponges have no symmetry.</P>
+    </div>
+</aside>
+  <div class="whitespace"></div>
+  <aside class="aside aside-3"><img ID="excellencepic" src="img/icons/kittens.jpeg" />
+</aside>
+  <aside class="aside aside-4"><div ID="text">
+				<p ID="lead">WHO ARE THE ANIMALS?</p>
+				<p>The Animal Kingdom is a spirit organization at The University of Texas at Austin.</p>
+    </div>
+</aside>
+</div>
+		
+<!-- Social media and footer -->
+	<div ID="socialmedia">
+		<p>We're on social media!</p>
+		<a href=""><img ID="social" src="img/icons/facebook.png" /></a>
+		<a href=""><img ID="social" src="img/icons/instagram.png" /></a>
+		<a href=""><img ID="social" src="img/icons/twitter.png" /></a>
+	</div>
+		
+	<div ID="footer">
+		<img src="img/logo.jpg" ID="logo">
+		<p>©Copyright 2016 - The Animal Kingdom. All rights reserved.</p>
+	</div>
+  </body> 
+</html>
