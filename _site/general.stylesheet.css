@@ -1,5 +1,4 @@
 /* Header */
-@import "compass/css3";
 #holder {
   position:fixed;
   width:100%;
@@ -83,23 +82,14 @@ li a, .dropbtn {
 	max-width:800px;
 	margin:auto;
 	position:relative;
+	width:80%;
 }
 .slides {
 	position:relative;
 }
-.bottomleft{
-	font-family: 'Open Sans Condensed', sans-serif;
-	color:white;
-	position:absolute;
-	left:0;
-	bottom:5px;
-	font-size:20px;
-	padding:.3em;
-	background-color:#000;
-}
 .button {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:30px;
+	font-size:1.5em;
 	color:white;
 	background-color:#000;
 	display:inline-block;
@@ -110,9 +100,9 @@ li a, .dropbtn {
 	padding:0;
 	border-radius:50%;
 	cursor:pointer;
-	width:40px;
-	height:40px;
-	line-height:40px;
+	width:1em;
+	height:1em;
+	line-height:1em;
 }
 
 /* Title and subtitle */
