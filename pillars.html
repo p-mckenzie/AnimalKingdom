@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pillars - Animal Kingdom</title>
+	<LINK REL="SHORTCUT ICON" HREF="favicon.ico">
+	
+    <!-- CSS -->
+    <link href="pillars.stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="general.stylesheet.css" rel="stylesheet" type="text/css">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    <!-- Header -->
+		<div ID="holder">
+			<ul>
+				<li><a href="./">Home</a></li>
+				<li class="dropdown">
+					<a href="" class="dropbtn">About</a>
+					<div class="dropdown-content">
+						<a href="about.html" class="active">About</a>
+						<a href="lbexcellence.html">AnimalExcellence</a>
+					</div>
+				</li>
+				<li class="currentpage"><a href="pillars.html">Pillars</a></li>
+				<li class="dropdown">
+					<a href="" class="dropbtn">Members</a>
+					<div class="dropdown-content">
+						<a href="officers.html">Officers</a>
+						<a href="members.html">Active Members</a>
+					</div>
+				</li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+		</div>
+	<br><br><br><br>
+
+	
+    <!-- Slideshow -->
+	<div class="slideshow">
+
+<div class="slides mySlides">
+  <img src="img/slideshow/pillars/1.jpeg" style="width:100%">
+</div>
+
+<div class="slides mySlides">
+  <img src="img/slideshow/pillars/2.jpeg" style="width:100%">
+</div>
+
+<a class="button" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"> < </a>
+<a class="button" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"> > </a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+    <!-- Title -->
+	<div ID="titlebox">
+		<div ID="title">FOUR PILLARS</div>
+		<div ID="subtitle">Many thanks to Wikipedia for the replacement content.<br></div>
+		</div>
+		
+		<!--Ladybird section-->
+		<div class="wrapper">
+			<aside class="aside aside-1">
+				<img ID="excellencepic" src="img/icons/cows.jpeg" />
+			</aside>
+			<aside class="aside aside-2"><div ID="text">
+				<p ID="lead">Cows</p>
+				<p>Cattle—colloquially cows—are the most common type of large domesticated ungulates. They are a prominent modern member of the subfamily Bovinae, are the most widespread species of the genus Bos, and are most commonly classified collectively as Bos taurus.</p></div>
+			</aside>
+			<div class="whitespace-1"></div>
+			<aside class="aside aside-3">
+				<img ID="excellencepic" src="img/icons/goldens.jpg" />
+			</aside>
+			<aside class="aside aside-4">
+				<div ID="text">
+					<p ID="lead">Dogs</p>
+					<p>The domestic dog (Canis lupus familiaris or Canis familiaris) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant gray wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct.[14] The dog was the first species to be domesticated and has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes.
+					</p></div>
+			</aside>
+			<div class="whitespace-2"></div>
+			<aside class="aside aside-5">
+				<img ID="excellencepic" src="img/icons/giraffes.jpeg" />
+			</aside>
+			<aside class="aside aside-6">
+				<div ID="text">
+					<p ID="lead">Giraffes</p>
+					<p>The giraffe (Giraffa) is a genus of African even-toed ungulate mammals, the tallest living terrestrial animals and the largest ruminants. The genus currently consists of one species, Giraffa camelopardalis, the type species. Seven other species are extinct, prehistoric species known from fossils. Taxonomic classifications of one to eight extant giraffe species have been described, based upon research into the mitochondrial and nuclear DNA, as well as morphological measurements of Giraffa, but the IUCN currently recognizes only one species with nine subspecies.
+					</p></div>
+			</aside>
+			<div class="whitespace-3"></div>
+			<aside class="aside aside-7">
+				<img ID="excellencepic" src="img/icons/puppy.jpeg" />
+			</aside>
+			<aside class="aside aside-8">
+				<div ID="text">
+					<p ID="lead">Puppy</p>
+					<p>A puppy is a juvenile dog. Some puppies can weigh 1–3 lb (0.45–1.36 kg), while larger ones can weigh up to 15–23 lb (6.8–10.4 kg). All healthy puppies grow quickly after birth. A puppy's coat color may change as the puppy grows older, as is commonly seen in breeds such as the Yorkshire Terrier. In vernacular English, puppy refers specifically to dogs, while pup may often be used for other mammals such as seals, giraffes, guinea pigs, or even rats.</p>
+					</div>
+			</aside>
+		</div>
+		
+<!-- Social media and footer -->
+	<div ID="socialmedia">
+		<p>We're on social media!</p>
+		<a href=""><img ID="social" src="img/icons/facebook.png" /></a>
+		<a href=""><img ID="social" src="img/icons/instagram.png" /></a>
+		<a href=""><img ID="social" src="img/icons/twitter.png" /></a>
+	</div>
+		
+	<div ID="footer">
+		<img src="img/logo.jpg" ID="logo">
+		<p>©Copyright 2016 - The Animal Kingdom. All rights reserved.</p>
+	</div>
+  </body> 
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Animal Kingdom</title>
+	<LINK REL="SHORTCUT ICON" HREF="favicon.ico">
+	
+    <!-- CSS -->
+    <link href="home.stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="general.stylesheet.css" rel="stylesheet" type="text/css">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    <!-- Header -->
+		<div ID="holder">
+			<ul>
+				<li class="currentpage"><a href="./">Home</a></li>
+				<li class="dropdown">
+					<a href="" class="dropbtn">About</a>
+					<div class="dropdown-content">
+						<a href="about.html" class="active">About</a>
+						<a href="lbexcellence.html">AnimalExcellence</a>
+					</div>
+				</li>
+				<li><a href="pillars.html">Pillars</a></li>
+				<li class="dropdown">
+					<a href="" class="dropbtn">Members</a>
+					<div class="dropdown-content">
+						<a href="officers.html">Officers</a>
+						<a href="members.html">Active Members</a>
+					</div>
+				</li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+		</div>
+	<br><br><br><br>
+	
+    <!-- Slideshow -->
+	<div class="slideshow">
+
+<div class="slides mySlides">
+  <img src="img/slideshow/home/1.jpeg" style="width:100%">
+</div>
+
+<div class="slides mySlides">
+  <img src="img/slideshow/home/2.jpeg" style="width:100%">
+</div>
+
+
+<a class="button" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"> < </a>
+<a class="button" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"> > </a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+    <!-- Title -->
+	<div ID="titlebox">
+		<div ID="title">ANIMAL KINGDOM</div>
+		<div ID="subtitle">Animals are eukaryotic, multicellular organisms that form the biological kingdom Animalia.<br></div>
+	</div>
+		
+		<!--Ladybird section-->
+		<div class="navigation">
+			<div class="left1"><img ID="founders" src="img/team/founders.jpg" />
+			</div>
+			<div class="right2">
+				<div ID="text">
+					<p ID="question">A message from the author!</p>
+					<p>This is a version of a website that <a href='https://p-mckenzie.github.io/'>Paige McKenzie</a> built a few years ago for a friend's social organization at the University of Texas at Austin, when she wanted to teach herself HTML and CSS. 
+					For nostalgic purposes, it is hosted here, with all personal information removed and photos replaced. 
+					Enjoy!
+					<br><br>- the Parliament</p>
+				</div>
+			</div>
+		</div>
+		
+<!-- Social media and footer -->
+	<div ID="socialmedia">
+		<p>We're on social media!</p>
+		<a href=""><img ID="social" src="img/icons/facebook.png" /></a>
+		<a href=""><img ID="social" src="img/icons/instagram.png" /></a>
+		<a href=""><img ID="social" src="img/icons/twitter.png" /></a>
+	</div>
+		
+	<div ID="footer">
+		<img src="img/logo.jpg" ID="logo">
+		<p>©Copyright 2016 - The Animal Kingdom. All rights reserved.</p>
+	</div>
+  </body> 
+</html>
